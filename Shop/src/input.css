@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components
+{
+    .grid-area{
+        grid-area: area;
+    }
+    .grid-area-2{
+        grid-area: area2;
+    }
+    .grid-3-area{
+        display: grid;
+        grid-template-areas: "area area area ." 
+                             ". area2 area2 area2";
+    }
+    .card{
+        border-radius: 1rem;
+        background-color: #fff;
+        border: 1px solid #e6e6e6;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .no-scroll::-webkit-scrollbar{
+        display: none;
+    }
+}
