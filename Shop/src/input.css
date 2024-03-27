@@ -15,6 +15,11 @@
         grid-template-areas: "area area area ." 
                              ". area2 area2 area2";
     }
+    .grid-4-area{
+        grid-template-areas: "area area"
+                               ". ."
+                               "area2 area2";
+    }
     .card{
         border-radius: 1rem;
         background-color: #fff;
@@ -26,5 +31,9 @@
     }
     .no-scroll::-webkit-scrollbar{
         display: none;
+    }
+    *::selection{
+        background-color: rgb(238, 72, 72);
+        color: #fff;
     }
 }
